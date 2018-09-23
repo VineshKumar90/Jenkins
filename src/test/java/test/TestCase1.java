@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCase1 {
@@ -27,7 +28,13 @@ public class TestCase1 {
 		//driver.findElement(By.xpath("//*[@title='Back to homepage']")).click();
 		System.out.println(driver.findElement(By.xpath("//*[@stroke-linecap='butt']")).getText());
 		System.out.println(driver.findElements(By.tagName("g")).size());
+		Assert.assertEquals("vinay", "vinay");
 		driver.close();
+	}
+	
+	@Test
+	public void test2(){
+		Assert.assertEquals("vinay", "vinay");
 	}
 	
 }
