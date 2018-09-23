@@ -14,7 +14,7 @@ public class TestCase1 {
 
 	@Test
 	public void test1(){
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 	//	File vo = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		driver.manage().window().maximize();
